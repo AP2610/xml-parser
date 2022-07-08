@@ -1,38 +1,76 @@
+body {
+  background-image: url('./images/cool-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.start-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choose-file,
+.asset-id,
+.xml-textarea {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.asset-id,
+.find-asset-button,
+.download-button,
+.search-again-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.download-button {
+  border-bottom-right-radius: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.search-again-button {
+  border-top-right-radius: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.xml-textarea {
+  min-height: 100% !important;
+  border-right-color: #ced4da;
+}
+
+.btn-primary {
+  background-color: #5f0264 !important;
+  border-color: #5f0264 !important;
+}
+
+.btn-primary:hover {
+  background-color: #38003b !important;
+  border-color: #38003b !important;
+}
+
+.btn-secondary {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #363434 !important;
+  border-color: #363434 !important;
+}
+
+.btn-tertiary {
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.btn-tertiary:hover {
+  background-color: #eee !important;
+  border-color: #eee !important;
 }
